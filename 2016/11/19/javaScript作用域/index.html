@@ -84,15 +84,31 @@
 
 
 
-<meta name="description" content="但执心方始安之念">
-<meta property="og:type" content="website">
-<meta property="og:title" content="On The Way --Lean">
-<meta property="og:url" content="https://lean-h.github.io/index.html">
+<meta name="description" content="##JS作用域理解##
+
+看书总结的个人理解,欢迎指正,共同进步~~
+
+JavaScript被归类为解释执行的编译语言, JavaScript采用的是词法作用域原型,在代码编写时,作用域就确定下来.学过编译可知,会在源程序运行边解释边运行,类比”口译”,但js中提供了在词法分析后依旧可以修改作用域的方法:
+eval( )函数   在参数中修改的函数,被动态加入修改作用域123456function">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javaScript作用域">
+<meta property="og:url" content="https://lean-h.github.io/2016/11/19/javaScript作用域/index.html">
 <meta property="og:site_name" content="On The Way --Lean">
-<meta property="og:description" content="但执心方始安之念">
+<meta property="og:description" content="##JS作用域理解##
+
+看书总结的个人理解,欢迎指正,共同进步~~
+
+JavaScript被归类为解释执行的编译语言, JavaScript采用的是词法作用域原型,在代码编写时,作用域就确定下来.学过编译可知,会在源程序运行边解释边运行,类比”口译”,但js中提供了在词法分析后依旧可以修改作用域的方法:
+eval( )函数   在参数中修改的函数,被动态加入修改作用域123456function">
+<meta property="og:updated_time" content="2016-11-19T13:21:58.863Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="On The Way --Lean">
-<meta name="twitter:description" content="但执心方始安之念">
+<meta name="twitter:title" content="javaScript作用域">
+<meta name="twitter:description" content="##JS作用域理解##
+
+看书总结的个人理解,欢迎指正,共同进步~~
+
+JavaScript被归类为解释执行的编译语言, JavaScript采用的是词法作用域原型,在代码编写时,作用域就确定下来.学过编译可知,会在源程序运行边解释边运行,类比”口译”,但js中提供了在词法分析后依旧可以修改作用域的方法:
+eval( )函数   在参数中修改的函数,被动态加入修改作用域123456function">
 
 
 
@@ -120,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="https://lean-h.github.io/"/>
+  <link rel="canonical" href="https://lean-h.github.io/2016/11/19/javaScript作用域/"/>
 
 
 
 
 
-  <title> On The Way --Lean </title>
+  <title> javaScript作用域 | On The Way --Lean </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -147,9 +163,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -258,9 +272,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -293,10 +307,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/11/19/javaScript作用域/" itemprop="url">
-                  javaScript作用域
-                </a>
+                javaScript作用域
               
             
           </h1>
@@ -345,9 +356,7 @@
       
 
       
-        
-          
-            <p>##JS作用域理解##</p>
+        <p>##JS作用域理解##</p>
 <blockquote>
 <p>看书总结的个人理解,欢迎指正,共同进步~~</p>
 </blockquote>
@@ -357,16 +366,20 @@
 <p>####关于this####<br>this是运行才会绑定对象,动态变化的,但首先明确this翻译是这个,但”这个”并非函数本身,在&lt;&lt;你不知道的JavaScript&gt;&gt;中看到一个有意思的例子<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function foo()&#123;</div><div class="line">  var a=2;</div><div class="line">  this.bar();</div><div class="line">&#125;</div><div class="line">function bar()&#123;</div><div class="line">	console.log(this.a);</div><div class="line">&#125;</div><div class="line">foo()        //ReferenceError a is not defined</div></pre></td></tr></table></figure></p>
 <p>错误:<br>1.为了让bar的this指向自身,foo()错误地在bar()前面加了this.这里可以直接调用<br>2.bar函数内部使用this使用foo的a变量,但作用域不可以通过js联通访问,可以当作参数传递.</p>
 </li></ul>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -378,16 +391,15 @@
 
       
       
-        <div class="post-eof"></div>
-      
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -395,6 +407,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -552,6 +568,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
